@@ -233,7 +233,7 @@ img {
 
 .secao {
   padding: 72px 0;
-  background: var(--preto);
+  background: transparent;
 }
 
 .secao-menor {
@@ -1208,4 +1208,11 @@ body {
   .grade-especializacoes {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* Correção: seções transparentes no fundo colorido */
+.secao,
+.subaba-painel .secao {
+  background: transparent;
 }
