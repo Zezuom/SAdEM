@@ -33,4 +33,6 @@ A aba `USP` contém mapas incorporados do Google Maps para Campus 1 e Campus 2, 
 
 As imagens das extracurriculares da aba USP foram substituídas por arquivos locais dentro de `img/extracurriculares/`, com apresentação padronizada para deixar os cartões mais consistentes visualmente.
 
-As imagens das extracurriculares na página `usp.html` foram padronizadas em arquivos locais dentro de `img/extracurriculares/`, com tratamento visual para exibição uniforme em cartões.
+Gestores dos núcleos atualizados na página `nucleos.html`: Quack, Educk, MKultural, Eventos, Social, Esportes, MKting e MKado.
+
+Atualização: a seção de conteúdo sugerido da página `alumni.html` foi removida e o favicon foi adicionado usando o logotipo da SAdEM.
