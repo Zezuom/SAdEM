@@ -1,0 +1,11 @@
+GUIA RÁPIDO DO SITE DA SADEM
+
+1. Abra index.html no navegador para testar o site localmente.
+2. O menu principal está em todas as páginas: Início, USP, Núcleos, Rede Alumni, Iniciações Científicas e Contato.
+3. A aba USP funciona como guia institucional do campus, com mapas, curso, grade e extracurriculares.
+4. Eventos ficam dentro de nucleos.html, na subaba Eventos.
+5. Para trocar textos, edite o arquivo HTML correspondente.
+6. Para alterar cores, fontes e espaçamentos, edite css/estilo.css.
+7. Para publicar, envie a pasta para um repositório GitHub e ative GitHub Pages.
+
+A aba Núcleos possui duas subabas: Núcleos e Eventos. A aba USP usa imagens externas nos cartões de extracurriculares; para deixar tudo offline, baixe as imagens autorizadas e substitua os links no arquivo usp.html por arquivos locais em img/extracurriculares/.

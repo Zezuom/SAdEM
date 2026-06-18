@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Visualização interativa dos núcleos internos da Secretaria Acadêmica da Engenharia Mecatrônica.">
+  <title>Núcleos | SAdEM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="marca" aria-label="Página inicial da SAdEM">
+        <img src="img/logo-sadem.png" alt="Logotipo da SAdEM">
+        <div>
+          <strong>SAdEM</strong>
+          <span>Secretaria Acadêmica da Engenharia Mecatrônica</span>
+        </div>
+      </a>
+      <button class="botao-menu" id="botaoMenu" type="button" aria-expanded="false" aria-controls="menuPrincipal">Menu</button>
+      <nav class="menu" id="menuPrincipal" aria-label="Menu principal">
+        <a href="index.html" class="">Início</a>
+        <a href="usp.html" class="">USP</a>
+        <a href="nucleos.html" class="ativo">Núcleos</a>
+        <a href="alumni.html" class="">Rede Alumni</a>
+        <a href="iniciacoes-cientificas.html" class="">Iniciações Científicas</a>
+        <a href="contato.html" class="">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="pagina-interna pagina-gradiente">
+      <div class="container">
+        <span class="rotulo">Organização interna</span>
+        <h1>Núcleos da SAdEM</h1>
+        <p>Cada núcleo atua em uma frente específica da secretaria. Selecione um dos cartões abaixo para ver o resumo e use o botão “Saiba mais” para abrir as informações detalhadas.</p>
+      </div>
+    </section>
+
+    <section class="container secao secao-menor">
+      <div class="abas-nucleos" role="tablist" aria-label="Subabas da página Núcleos">
+        <button class="aba-nucleo ativa" type="button" data-subaba="nucleos" role="tab" aria-selected="true">Núcleos</button>
+        <button class="aba-nucleo" type="button" data-subaba="eventos" role="tab" aria-selected="false">Eventos</button>
+      </div>
+    </section>
+
+    <div class="subaba-painel ativo" data-painel="nucleos">
+    <section class="container secao secao-menor">
+      <div class="resumos-nucleos" aria-label="Resumo dos núcleos">
+        <article class="resumo-nucleo ativo" data-resumo="quack">
+          <div>
+            <span class="resumo-categoria">Acadêmico</span>
+            <h3>Quack</h3>
+            <p>Acompanha a qualidade do curso e o bom andamento da graduação por meio de feedbacks, diálogo com docentes e eventos acadêmicos.</p>
+          </div>
+          <button class="botao botao-resumo" type="button" data-expandir="quack">Saiba mais</button>
+        </article>
+
+        <article class="resumo-nucleo" data-resumo="educk">
+          <div>
+            <span class="resumo-categoria">Formação</span>
+            <h3>Educk</h3>
+            <p>Difunde conhecimento na Mecatrônica com minicursos, visitas técnicas, aulões e outras atividades formativas.</p>
+          </div>
+          <button class="botao botao-resumo" type="button" data-expandir="educk">Saiba mais</button>
+        </article>
+
+        <article class="resumo-nucleo" data-resumo="mkado">
+          <div>
+            <span class="resumo-categoria">Produtos</span>
+            <h3>MKado</h3>
+            <p>Cuida da idealização e da venda dos produtos do curso, como kits, camisetas e itens representativos da Mecatrônica.</p>
+          </div>
+          <button class="botao botao-resumo" type="button" data-expandir="mkado">Saiba mais</button>
+        </article>
+
+        <article class="resumo-nucleo" data-resumo="eventos">
+          <div>
+            <span class="resumo-categoria">Integração</span>
+            <h3>Eventos</h3>
+            <p>Promove a integração dos estudantes com atividades de convivência e ações que deixam a graduação mais leve.</p>
+          </div>
+          <button class="botao botao-resumo" type="button" data-expandir="eventos">Saiba mais</button>
+        </article>
+
+        <article class="resumo-nucleo" data-resumo="esportes">
+          <div>
+            <span class="resumo-categoria">Integração</span>
+            <h3>Esportes</h3>
+            <p>Integra os alunos por meio de práticas esportivas, campeonatos, eventos e e-sports.</p>
+          </div>
+          <button class="botao botao-resumo" type="button" data-expandir="esportes">Saiba mais</button>
+        </article>
+
+        <article class="resumo-nucleo" data-resumo="mkting">
+          <div>
+            <span class="resumo-categoria">Comunicação</span>
+            <h3>MKting</h3>
+            <p>Produz artes, peças de divulgação e registros visuais das ações da SAdEM.</p>
+          </div>
+          <button class="botao botao-resumo" type="button" data-expandir="mkting">Saiba mais</button>
+        </article>
+
+        <article class="resumo-nucleo" data-resumo="social">
+          <div>
+            <span class="resumo-categoria">Extensão</span>
+            <h3>Social</h3>
+            <p>Organiza campanhas e eventos com impacto positivo dentro e fora da universidade.</p>
+          </div>
+          <button class="botao botao-resumo" type="button" data-expandir="social">Saiba mais</button>
+        </article>
+
+        <article class="resumo-nucleo" data-resumo="mkultural">
+          <div>
+            <span class="resumo-categoria">Integração</span>
+            <h3>MKultural</h3>
+            <p>Promove integração por meio de manifestações culturais, artísticas, grupos de discussão e eventos temáticos.</p>
+          </div>
+          <button class="botao botao-resumo" type="button" data-expandir="mkultural">Saiba mais</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="container secao" id="secaoDetalhesNucleos" hidden>
+<div class="detalhes-nucleos">
+        <article class="detalhe-nucleo ativo" data-detalhe="quack" id="detalhe-quack">
+          <div class="detalhe-topo">
+            <div>
+              <span class="etiqueta">Acadêmico</span>
+              <h3>Quack</h3>
+              <p class="detalhe-linha-fina">Qualidade do curso, feedbacks, fóruns acadêmicos e diálogo constante com a comunidade da Mecatrônica.</p>
+            </div>
+            <button class="seta-proximo-nucleo" type="button" data-proximo="educk" aria-label="Ir para o próximo núcleo">Próximo núcleo →</button>
+          </div>
+          <div class="detalhe-corpo">
+            <div class="galeria-detalhe">
+              <div class="imagem-detalhe-principal"><img src="img/nucleos/quack.jpg" alt="Imagem do núcleo Quack"></div>
+            </div>
+            <div class="informacoes-detalhe">
+              <div class="caixa-informativa">
+                <h4>Descrição detalhada</h4>
+                <p>O Quack é o núcleo responsável pela manutenção da qualidade do curso e pelo acompanhamento do seu bom andamento. Sua atuação envolve coleta de feedbacks, organização de eventos de cunho acadêmico, comunicação frequente com professores e aproximação com ex-alunos para fortalecer o debate sobre a formação em Mecatrônica.</p>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Frentes de atuação</h4>
+                <ul>
+                  <li>Feedbacks discentes e levantamento de demandas</li>
+                  <li>Fóruns acadêmicos e mesas redondas</li>
+                  <li>Comunicação com docentes e coordenação</li>
+                  <li>Articulação com ex-alunos</li>
+                </ul>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Gestores atuais</h4>
+                <ul>
+                  
+                  <li>Adunas</li>
+                  <li>Moderado</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="detalhe-nucleo" data-detalhe="educk" id="detalhe-educk" hidden>
+          <div class="detalhe-topo">
+            <div>
+              <span class="etiqueta">Formação</span>
+              <h3>Educk</h3>
+              <p class="detalhe-linha-fina">Minicursos, visitas técnicas e atividades que difundem conhecimento entre os alunos.</p>
+            </div>
+            <button class="seta-proximo-nucleo" type="button" data-proximo="mkado" aria-label="Ir para o próximo núcleo">Próximo núcleo →</button>
+          </div>
+          <div class="detalhe-corpo">
+            <div class="galeria-detalhe">
+              <div class="imagem-detalhe-principal"><img src="img/nucleos/educk.jpg" alt="Imagem do núcleo Educk"></div>
+            </div>
+            <div class="informacoes-detalhe">
+              <div class="caixa-informativa">
+                <h4>Descrição detalhada</h4>
+                <p>O Educk é o núcleo educacional responsável pela propagação do conhecimento entre os alunos da Engenharia Mecatrônica. Sua atuação ocorre por meio de minicursos, visitas técnicas, aulões e iniciativas que ampliam a formação acadêmica e aproximam os estudantes de oportunidades dentro e fora da USP.</p>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Frentes de atuação</h4>
+                <ul>
+                  <li>Minicursos e aulões</li>
+                  <li>Visitas técnicas</li>
+                  <li>Contato com instituições e empresas</li>
+                  <li>Desenvolvimento de comunicação e soft skills</li>
+                </ul>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Gestores atuais</h4>
+                <ul>
+                  
+                  <li>Vespa</li>
+                  <li>Mari</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="detalhe-nucleo" data-detalhe="mkado" id="detalhe-mkado" hidden>
+          <div class="detalhe-topo">
+            <div>
+              <span class="etiqueta">Produtos</span>
+              <h3>MKado</h3>
+              <p class="detalhe-linha-fina">Planejamento e comercialização dos produtos do curso.</p>
+            </div>
+            <button class="seta-proximo-nucleo" type="button" data-proximo="eventos" aria-label="Ir para o próximo núcleo">Próximo núcleo →</button>
+          </div>
+          <div class="detalhe-corpo">
+            <div class="galeria-detalhe">
+              <div class="imagem-detalhe-principal"><img src="img/nucleos/mkado.jpg" alt="Imagem do núcleo MKado"></div>
+            </div>
+            <div class="informacoes-detalhe">
+              <div class="caixa-informativa">
+                <h4>Descrição detalhada</h4>
+                <p>O MKado é o núcleo responsável pela idealização e pela venda dos produtos do curso. Ele organiza campanhas de comercialização, pensa novas peças relacionadas à identidade da Mecatrônica e mantém o contato com fornecedores e com a comunidade interessada nos itens do curso.</p>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Frentes de atuação</h4>
+                <ul>
+                  <li>Concepção de produtos</li>
+                  <li>Campanhas de venda</li>
+                  <li>Relacionamento com fornecedores</li>
+                  <li>Gestão de kits, camisetas e itens temáticos</li>
+                </ul>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Gestores atuais</h4>
+                <ul>
+                  
+                  <li>Laureano</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="detalhe-nucleo" data-detalhe="eventos" id="detalhe-eventos" hidden>
+          <div class="detalhe-topo">
+            <div>
+              <span class="etiqueta">Integração</span>
+              <h3>Eventos</h3>
+              <p class="detalhe-linha-fina">Integração estudantil por meio de convivência, recepção e atividades coletivas.</p>
+            </div>
+            <button class="seta-proximo-nucleo" type="button" data-proximo="esportes" aria-label="Ir para o próximo núcleo">Próximo núcleo →</button>
+          </div>
+          <div class="detalhe-corpo">
+            <div class="galeria-detalhe">
+              <div class="imagem-detalhe-principal"><img src="img/nucleos/eventos.jpg" alt="Imagem do núcleo Eventos"></div>
+            </div>
+            <div class="informacoes-detalhe">
+              <div class="caixa-informativa">
+                <h4>Descrição detalhada</h4>
+                <p>O núcleo Eventos é voltado à integração dos estudantes com diferentes tipos de atividades, especialmente aquelas ligadas à convivência e ao acolhimento. A proposta é organizar experiências que aliviem a rotina da graduação, aproximem os alunos e fortaleçam o senso de comunidade do curso.</p>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Frentes de atuação</h4>
+                <ul>
+                  <li>Recepção e integração</li>
+                  <li>Organização de encontros e confraternizações</li>
+                  <li>Apoio a ações coletivas da secretaria</li>
+                  <li>Planejamento de experiências estudantis</li>
+                </ul>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Gestores atuais</h4>
+                <ul>
+                  
+                  <li>Garçom</li>
+                  <li>Quebra</li>
+                  <li>Patolino</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="detalhe-nucleo" data-detalhe="esportes" id="detalhe-esportes" hidden>
+          <div class="detalhe-topo">
+            <div>
+              <span class="etiqueta">Integração</span>
+              <h3>Esportes</h3>
+              <p class="detalhe-linha-fina">Integração por esportes convencionais e e-sports.</p>
+            </div>
+            <button class="seta-proximo-nucleo" type="button" data-proximo="mkting" aria-label="Ir para o próximo núcleo">Próximo núcleo →</button>
+          </div>
+          <div class="detalhe-corpo">
+            <div class="galeria-detalhe">
+              <div class="imagem-detalhe-principal"><img src="img/nucleos/esportes.jpg" alt="Imagem do núcleo Esportes"></div>
+            </div>
+            <div class="informacoes-detalhe">
+              <div class="caixa-informativa">
+                <h4>Descrição detalhada</h4>
+                <p>O núcleo Esportes busca promover a integração dos alunos por meio da organização e realização de eventos esportivos, contemplando tanto modalidades convencionais quanto e-sports. A atuação do núcleo fortalece a convivência e amplia a participação estudantil em ações competitivas e recreativas.</p>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Frentes de atuação</h4>
+                <ul>
+                  <li>Torneios internos</li>
+                  <li>Eventos esportivos e recreativos</li>
+                  <li>Competições e e-sports</li>
+                  <li>Integração estudantil por meio do esporte</li>
+                </ul>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Gestores atuais</h4>
+                <ul>
+                  
+                  <li>Davizão</li>
+                  <li>PS</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="detalhe-nucleo" data-detalhe="mkting" id="detalhe-mkting" hidden>
+          <div class="detalhe-topo">
+            <div>
+              <span class="etiqueta">Comunicação</span>
+              <h3>MKting</h3>
+              <p class="detalhe-linha-fina">Artes, divulgação e registro visual das ações da SAdEM.</p>
+            </div>
+            <button class="seta-proximo-nucleo" type="button" data-proximo="social" aria-label="Ir para o próximo núcleo">Próximo núcleo →</button>
+          </div>
+          <div class="detalhe-corpo">
+            <div class="galeria-detalhe">
+              <div class="imagem-detalhe-principal"><img src="img/nucleos/mkting.jpg" alt="Imagem do núcleo MKting"></div>
+            </div>
+            <div class="informacoes-detalhe">
+              <div class="caixa-informativa">
+                <h4>Descrição detalhada</h4>
+                <p>O MKting é o núcleo responsável pela criação de artes para divulgação de eventos e produtos, além do registro fotográfico das atividades da secretaria. É a frente que organiza a comunicação visual da SAdEM e sustenta a divulgação das ações para a comunidade.</p>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Frentes de atuação</h4>
+                <ul>
+                  <li>Artes para divulgação</li>
+                  <li>Fotografia e cobertura de eventos</li>
+                  <li>Apoio às redes sociais</li>
+                  <li>Padronização visual de materiais</li>
+                </ul>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Gestores atuais</h4>
+                <ul>
+                  
+                  <li>Sans</li>
+                  <li>Coreano</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="detalhe-nucleo" data-detalhe="social" id="detalhe-social" hidden>
+          <div class="detalhe-topo">
+            <div>
+              <span class="etiqueta">Extensão</span>
+              <h3>Social</h3>
+              <p class="detalhe-linha-fina">Campanhas, arrecadações e ações com impacto positivo na sociedade.</p>
+            </div>
+            <button class="seta-proximo-nucleo" type="button" data-proximo="mkultural" aria-label="Ir para o próximo núcleo">Próximo núcleo →</button>
+          </div>
+          <div class="detalhe-corpo">
+            <div class="galeria-detalhe">
+              <div class="imagem-detalhe-principal"><img src="img/nucleos/social.jpg" alt="Imagem do núcleo Social"></div>
+            </div>
+            <div class="informacoes-detalhe">
+              <div class="caixa-informativa">
+                <h4>Descrição detalhada</h4>
+                <p>O Social organiza eventos e iniciativas que buscam afetar positivamente a sociedade dentro e fora da universidade. Entre as ações estão campanhas de doação, arrecadações, eventos em escolas, ONGs, canis e outras atividades voltadas ao impacto social e à responsabilidade coletiva.</p>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Frentes de atuação</h4>
+                <ul>
+                  <li>Doação de sangue e cabelo</li>
+                  <li>Arrecadações solidárias</li>
+                  <li>Ações em escolas, ONGs e canis</li>
+                  <li>Eventos de conscientização</li>
+                </ul>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Gestores atuais</h4>
+                <ul>
+                  
+                  <li>Raquel</li>
+                  <li>Lara</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="detalhe-nucleo" data-detalhe="mkultural" id="detalhe-mkultural" hidden>
+          <div class="detalhe-topo">
+            <div>
+              <span class="etiqueta">Integração</span>
+              <h3>MKultural</h3>
+              <p class="detalhe-linha-fina">Integração por meio de arte, cultura e grupos temáticos.</p>
+            </div>
+            <button class="seta-proximo-nucleo" type="button" data-proximo="quack" aria-label="Ir para o próximo núcleo">Próximo núcleo →</button>
+          </div>
+          <div class="detalhe-corpo">
+            <div class="galeria-detalhe">
+              <div class="imagem-detalhe-principal"><img src="img/nucleos/mkultural.jpg" alt="Imagem do núcleo MKultural"></div>
+            </div>
+            <div class="informacoes-detalhe">
+              <div class="caixa-informativa">
+                <h4>Descrição detalhada</h4>
+                <p>O MKultural é um núcleo de integração que promove manifestações artísticas e culturais dos alunos da Mecatrônica. Seu objetivo é estimular desenho, música, teatro, artesanato, escrita, cosplay, jogos e outras formas de expressão por meio de eventos, clubes e espaços de discussão.</p>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Frentes de atuação</h4>
+                <ul>
+                  <li>Eventos culturais e temáticos</li>
+                  <li>Clubes e grupos de discussão</li>
+                  <li>Atividades artísticas</li>
+                  <li>Integração estudantil por cultura</li>
+                </ul>
+              </div>
+              <div class="caixa-informativa">
+                <h4>Gestores atuais</h4>
+                <ul>
+                  
+                  <li>Pai</li>
+                  <li>Hiena</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    </div>
+
+    <div class="subaba-painel" data-painel="eventos" hidden>
+      <section class="container secao secao-menor" id="eventos-sadem">
+        <div class="titulo-secao">
+          <span class="rotulo">Eventos dos núcleos</span>
+          <h2>Atividades organizadas pela SAdEM</h2>
+          <p>Os eventos ficam vinculados aos núcleos responsáveis por cada frente. Esta seção funciona como uma vitrine de formatos de evento que podem ser atualizados conforme o calendário real da gestão.</p>
+        </div>
+
+        <div class="linha-tempo">
+          <article>
+            <span>Quack · Acadêmico</span>
+            <h2>Fóruns, feedbacks e mesas redondas</h2>
+            <p>Atividades voltadas à qualidade do curso, discussão de demandas acadêmicas, conversa com docentes, acompanhamento da grade e aproximação com ex-alunos.</p>
+          </article>
+          <article>
+            <span>Educk · Formação</span>
+            <h2>Aulões, minicursos e visitas técnicas</h2>
+            <p>Eventos para complementar a formação técnica dos alunos, com foco em aprendizagem prática, contato com empresas, laboratórios e temas de engenharia.</p>
+          </article>
+          <article>
+            <span>Eventos · Integração</span>
+            <h2>Recepção e convivência estudantil</h2>
+            <p>Ações de acolhimento, integração entre turmas e momentos de convivência que ajudam os alunos a se inserir melhor no curso.</p>
+          </article>
+          <article>
+            <span>Esportes · Integração</span>
+            <h2>Torneios, treinos e e-sports</h2>
+            <p>Atividades esportivas e recreativas, incluindo modalidades presenciais, campeonatos internos e eventos ligados a jogos e competição.</p>
+          </article>
+          <article>
+            <span>Social · Extensão</span>
+            <h2>Campanhas e ações sociais</h2>
+            <p>Doações, arrecadações, visitas, campanhas solidárias e demais iniciativas que conectam os estudantes com demandas da sociedade.</p>
+          </article>
+          <article>
+            <span>MKultural · Integração</span>
+            <h2>Cultura, arte e grupos temáticos</h2>
+            <p>Eventos voltados a expressão cultural, clubes, discussões, jogos, música, literatura, artes e outras formas de integração por cultura.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div class="rodape-marca">
+        <img src="img/logo-sadem.png" alt="Logotipo da SAdEM" class="logo-rodape">
+        <div>
+          <strong>Secretaria Acadêmica da Engenharia Mecatrônica</strong>
+          <p>Entidade estudantil vinculada à comunidade da Engenharia Mecatrônica da EESC-USP.</p>
+        </div>
+      </div>
+      <div class="rodape-contatos">
+        <p><a href="mailto:sadem@eesc.usp.br">sadem@eesc.usp.br</a></p>
+        <p><a href="https://www.instagram.com/patosadem/" target="_blank" rel="noopener">@patosadem</a></p>
+        <p><a href="https://eesc.usp.br/" target="_blank" rel="noopener">EESC-USP</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Canais de contato da Secretaria Acadêmica da Engenharia Mecatrônica.">
+  <title>Contato | SAdEM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="marca" aria-label="Página inicial da SAdEM">
+        <img src="img/logo-sadem.png" alt="Logotipo da SAdEM">
+        <div>
+          <strong>SAdEM</strong>
+          <span>Secretaria Acadêmica da Engenharia Mecatrônica</span>
+        </div>
+      </a>
+      <button class="botao-menu" id="botaoMenu" type="button" aria-expanded="false" aria-controls="menuPrincipal">Menu</button>
+      <nav class="menu" id="menuPrincipal" aria-label="Menu principal">
+        <a href="index.html" class="">Início</a>
+        <a href="usp.html" class="">USP</a>
+        <a href="nucleos.html" class="">Núcleos</a>
+        <a href="alumni.html" class="">Rede Alumni</a>
+        <a href="iniciacoes-cientificas.html" class="">Iniciações Científicas</a>
+        <a href="contato.html" class="ativo">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="pagina-interna pagina-gradiente">
+      <div class="container">
+        <span class="rotulo">Canais oficiais</span>
+        <h1>Contato</h1>
+        <p>Use esta página para centralizar e-mail, redes sociais, formulários institucionais e links úteis da secretaria.</p>
+      </div>
+    </section>
+    <section class="container secao contato-grade">
+      <div class="card-contato">
+        <h2>Informações</h2>
+        <dl class="lista-dados">
+          <dt>Instagram</dt>
+          <dd><a href="https://www.instagram.com/patosadem/" target="_blank" rel="noopener">@patosadem</a></dd>
+          <dt>E-mail</dt>
+          <dd><a href="mailto:sadem@eesc.usp.br">sadem@eesc.usp.br</a></dd>
+          <dt>Institucional</dt>
+          <dd><a href="https://eesc.usp.br/" target="_blank" rel="noopener">Escola de Engenharia de São Carlos da Universidade de São Paulo</a></dd>
+        </dl>
+      </div>
+      <form class="formulario" id="formContato">
+        <h2>Formulário visual</h2>
+        <p>Este formulário ainda não envia dados para servidor. Ele serve como modelo de interface para futura integração com Google Forms, Formspree ou backend próprio.</p>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" placeholder="Seu nome">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="seu.email@exemplo.com">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem"></textarea>
+        <button class="botao botao-formulario" type="submit">Simular envio</button>
+        <p class="retorno-formulario" id="retornoFormulario" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div class="rodape-marca">
+        <img src="img/logo-sadem.png" alt="Logotipo da SAdEM" class="logo-rodape">
+        <div>
+          <strong>Secretaria Acadêmica da Engenharia Mecatrônica</strong>
+          <p>Entidade estudantil vinculada à comunidade da Engenharia Mecatrônica da EESC-USP.</p>
+        </div>
+      </div>
+      <div class="rodape-contatos">
+        <p><a href="mailto:sadem@eesc.usp.br">sadem@eesc.usp.br</a></p>
+        <p><a href="https://www.instagram.com/patosadem/" target="_blank" rel="noopener">@patosadem</a></p>
+        <p><a href="https://eesc.usp.br/" target="_blank" rel="noopener">EESC-USP</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
