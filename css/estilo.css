@@ -1068,3 +1068,144 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* Ajustes visuais: mais presença da identidade SAdEM */
+body {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(31, 1, 57, 0.42), transparent 30%),
+    radial-gradient(circle at 92% 18%, rgba(4, 57, 1, 0.36), transparent 28%),
+    radial-gradient(circle at 50% 100%, rgba(31, 1, 57, 0.28), transparent 34%),
+    #050505;
+}
+
+.cabecalho {
+  background: linear-gradient(90deg, rgba(31, 1, 57, 0.98), rgba(5, 5, 5, 0.94) 48%, rgba(4, 57, 1, 0.96));
+}
+
+.abertura,
+.pagina-gradiente {
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.14), transparent 24%),
+    linear-gradient(120deg, var(--roxo-sadem), #32105a 42%, #123c18 76%, var(--verde-sadem));
+}
+
+.card-destaque,
+.card-lista,
+.bloco,
+.card-contato,
+.formulario,
+.caixa-informativa,
+.resumo-nucleo,
+.detalhe-nucleo,
+.card-curricular,
+.mapa-card {
+  border-color: rgba(255, 255, 255, 0.22);
+  background:
+    linear-gradient(145deg, rgba(31, 1, 57, 0.38), rgba(255, 255, 255, 0.055) 50%, rgba(4, 57, 1, 0.22));
+}
+
+.card-destaque:nth-child(even),
+.card-lista:nth-child(even),
+.bloco:nth-child(even),
+.card-curricular:nth-child(even) {
+  background:
+    linear-gradient(145deg, rgba(4, 57, 1, 0.34), rgba(255, 255, 255, 0.055) 50%, rgba(31, 1, 57, 0.28));
+}
+
+.destaque-usp-home {
+  background:
+    radial-gradient(circle at 90% 15%, rgba(255, 255, 255, 0.20), transparent 28%),
+    linear-gradient(120deg, var(--roxo-sadem), #3b126b 45%, var(--verde-sadem));
+  box-shadow: 0 18px 50px rgba(31, 1, 57, 0.34), inset 0 0 0 1px rgba(255,255,255,0.08);
+}
+
+.destaque-usp-home .botao-usp-home {
+  justify-self: start;
+  margin-top: 4px;
+  color: var(--branco-puro);
+  background: linear-gradient(120deg, #5d1fa4, var(--verde-sadem));
+  border-color: rgba(255, 255, 255, 0.42);
+  text-decoration: none;
+}
+
+.destaque-usp-home .botao-usp-home:hover,
+.destaque-usp-home .botao-usp-home:focus-visible {
+  background: var(--branco-puro);
+  color: var(--roxo-sadem);
+  text-decoration: none;
+}
+
+.manual-indice {
+  grid-template-columns: repeat(7, 1fr);
+  background: linear-gradient(120deg, rgba(31, 1, 57, 0.38), rgba(4, 57, 1, 0.22));
+}
+
+.manual-indice a,
+.aba-nucleo {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.etiqueta,
+.rotulo-card,
+.resumo-categoria,
+.card-curricular span {
+  color: #ffffff;
+}
+
+.grade-especializacoes {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card-colorido {
+  border-top: 4px solid rgba(255, 255, 255, 0.62);
+  background:
+    radial-gradient(circle at top right, rgba(4, 57, 1, 0.34), transparent 34%),
+    linear-gradient(145deg, rgba(31, 1, 57, 0.50), rgba(255, 255, 255, 0.06));
+}
+
+.rodape {
+  background:
+    linear-gradient(90deg, rgba(31, 1, 57, 0.96), #050505 52%, rgba(4, 57, 1, 0.92));
+}
+
+.link-rodape-icone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icone-rodape {
+  width: 1.08em;
+  height: 1.08em;
+  fill: currentColor;
+  flex: 0 0 auto;
+}
+
+.grade-campus .bloco {
+  min-height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .grade-especializacoes {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .manual-indice {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grade-especializacoes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .manual-indice,
+  .grade-especializacoes {
+    grid-template-columns: 1fr;
+  }
+}
