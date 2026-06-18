@@ -7,14 +7,14 @@ if (botaoMenu && menuPrincipal) {
   botaoMenu.addEventListener("click", () => {
     const menuAberto = menuPrincipal.classList.toggle("menu-aberto")
     botaoMenu.setAttribute("aria-expanded", String(menuAberto))
+    botaoMenu.textContent = menuAberto ? "Fechar" : "Menu"
   })
 }
-
 
 const botoesSubaba = document.querySelectorAll("[data-subaba]")
 const paineisSubaba = document.querySelectorAll("[data-painel]")
 
-function ativarSubaba(nomeSubaba) {
+function ativarSubaba(nomeSubaba, rolar = false) {
   botoesSubaba.forEach((botao) => {
     const ativo = botao.dataset.subaba === nomeSubaba
     botao.classList.toggle("ativa", ativo)
@@ -26,6 +26,13 @@ function ativarSubaba(nomeSubaba) {
     painel.classList.toggle("ativo", ativo)
     painel.hidden = !ativo
   })
+
+  if (rolar) {
+    const destino = document.getElementById(nomeSubaba)
+    if (destino) {
+      destino.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
 }
 
 botoesSubaba.forEach((botao) => {
@@ -36,6 +43,12 @@ botoesSubaba.forEach((botao) => {
 
 if (window.location.hash === "#eventos" || window.location.hash === "#eventos-sadem") {
   ativarSubaba("eventos")
+  window.addEventListener("load", () => {
+    const destino = document.getElementById("eventos")
+    if (destino) {
+      setTimeout(() => destino.scrollIntoView({ behavior: "smooth", block: "start" }), 80)
+    }
+  })
 }
 
 const resumos = document.querySelectorAll(".resumo-nucleo")
@@ -48,6 +61,13 @@ function ativarResumo(idNucleo) {
   resumos.forEach((resumo) => {
     const ativo = resumo.dataset.resumo === idNucleo
     resumo.classList.toggle("ativo", ativo)
+  })
+}
+
+function atualizarEstadoExpandido(idNucleo) {
+  botoesExpandir.forEach((botao) => {
+    const ativo = botao.dataset.expandir === idNucleo && secaoDetalhes && !secaoDetalhes.hidden
+    botao.setAttribute("aria-expanded", String(ativo))
   })
 }
 
@@ -65,6 +85,7 @@ function ativarDetalhe(idNucleo, rolarAteDetalhe = false) {
   })
 
   ativarResumo(idNucleo)
+  atualizarEstadoExpandido(idNucleo)
 
   if (rolarAteDetalhe) {
     secaoDetalhes.scrollIntoView({ behavior: "smooth", block: "start" })

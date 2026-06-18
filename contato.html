@@ -1,88 +1,89 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Canais de contato da Secretaria Acadêmica da Engenharia Mecatrônica.">
-  <title>Contato | SAdEM</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="img/logo-sadem.png">
-  <link rel="stylesheet" href="css/estilo.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Canais de contato da Secretaria Acadêmica da Engenharia Mecatrônica." name="description"/>
+<title>Contato | SAdEM</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="favicon.ico" rel="icon" sizes="any"/>
+<link href="img/logo-sadem.png" rel="apple-touch-icon"/>
+<link href="css/estilo.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="cabecalho">
-    <div class="container cabecalho-conteudo">
-      <a href="index.html" class="marca" aria-label="Página inicial da SAdEM">
-        <img src="img/logo-sadem.png" alt="Logotipo da SAdEM">
-        <div>
-          <strong>SAdEM</strong>
-          <span>Secretaria Acadêmica da Engenharia Mecatrônica</span>
-        </div>
-      </a>
-      <button class="botao-menu" id="botaoMenu" type="button" aria-expanded="false" aria-controls="menuPrincipal">Menu</button>
-      <nav class="menu" id="menuPrincipal" aria-label="Menu principal">
-        <a href="index.html" class="">Início</a>
-        <a href="usp.html" class="">USP</a>
-        <a href="nucleos.html" class="">Núcleos</a>
-        <a href="alumni.html" class="">Rede Alumni</a>
-        <a href="iniciacoes-cientificas.html" class="">Iniciações Científicas</a>
-        <a href="contato.html" class="ativo">Contato</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="pagina-interna pagina-gradiente">
-      <div class="container">
-        <span class="rotulo">Canais oficiais</span>
-        <h1>Contato</h1>
-        <p>Use esta página para centralizar e-mail, redes sociais, formulários institucionais e links úteis da secretaria.</p>
-      </div>
-    </section>
-    <section class="container secao contato-grade">
-      <div class="card-contato">
-        <h2>Informações</h2>
-        <dl class="lista-dados">
-          <dt>Instagram</dt>
-          <dd><a href="https://www.instagram.com/patosadem/" target="_blank" rel="noopener">@patosadem</a></dd>
-          <dt>E-mail</dt>
-          <dd><a href="mailto:sadem@eesc.usp.br">sadem@eesc.usp.br</a></dd>
-          <dt>Institucional</dt>
-          <dd><a href="https://eesc.usp.br/" target="_blank" rel="noopener">Escola de Engenharia de São Carlos da Universidade de São Paulo</a></dd>
-        </dl>
-      </div>
-      <form class="formulario" id="formContato">
-        <h2>Formulário visual</h2>
-        <p>Este formulário ainda não envia dados para servidor. Ele serve como modelo de interface para futura integração com Google Forms, Formspree ou backend próprio.</p>
-        <label for="nome">Nome</label>
-        <input id="nome" name="nome" type="text" placeholder="Seu nome">
-        <label for="email">E-mail</label>
-        <input id="email" name="email" type="email" placeholder="seu.email@exemplo.com">
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem"></textarea>
-        <button class="botao botao-formulario" type="submit">Simular envio</button>
-        <p class="retorno-formulario" id="retornoFormulario" aria-live="polite"></p>
-      </form>
-    </section>
-  </main>
-  <footer class="rodape">
-    <div class="container rodape-conteudo">
-      <div class="rodape-marca">
-        <img src="img/logo-sadem.png" alt="Logotipo da SAdEM" class="logo-rodape">
-        <div>
-          <strong>Secretaria Acadêmica da Engenharia Mecatrônica</strong>
-          <p>Entidade estudantil vinculada à comunidade da Engenharia Mecatrônica da EESC-USP.</p>
-        </div>
-      </div>
-      <div class="rodape-contatos">
-        <p><a href="mailto:sadem@eesc.usp.br">sadem@eesc.usp.br</a></p>
-        <p><a href="https://www.instagram.com/patosadem/" target="_blank" rel="noopener">@patosadem</a></p>
-        <p><a href="https://eesc.usp.br/" target="_blank" rel="noopener">EESC-USP</a></p>
-      </div>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
+<header class="cabecalho">
+<div class="container cabecalho-conteudo">
+<a aria-label="Página inicial da SAdEM" class="marca" href="index.html">
+<img alt="Logotipo da SAdEM" src="img/logo-sadem.png"/>
+<div>
+<strong>SAdEM</strong>
+<span>Secretaria Acadêmica da Engenharia Mecatrônica</span>
+</div>
+</a>
+<button aria-controls="menuPrincipal" aria-expanded="false" class="botao-menu" id="botaoMenu" type="button">Menu</button>
+<nav aria-label="Menu principal" class="menu" id="menuPrincipal">
+<a href="index.html">Início</a>
+<a href="usp.html">USP</a>
+<a href="nucleos.html">Núcleos</a>
+<a href="alumni.html">Rede Alumni</a>
+<a href="iniciacoes-cientificas.html">Iniciações Científicas</a>
+<a class="ativo" href="contato.html">Contato</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="pagina-interna pagina-gradiente">
+<div class="container">
+<span class="rotulo">Canais oficiais</span>
+<h1>Contato</h1>
+<p>Use esta página para centralizar e-mail, redes sociais, formulários institucionais e links úteis da secretaria.</p>
+</div>
+</section>
+<section class="container secao contato-grade">
+<div class="card-contato">
+<h2>Informações</h2>
+<dl class="lista-dados">
+<dt>Instagram</dt>
+<dd><a href="https://www.instagram.com/patosadem/" rel="noopener" target="_blank">@patosadem</a></dd>
+<dt>E-mail</dt>
+<dd><a href="mailto:sadem@eesc.usp.br">sadem@eesc.usp.br</a></dd>
+<dt>Institucional</dt>
+<dd><a href="https://eesc.usp.br/" rel="noopener" target="_blank">Escola de Engenharia de São Carlos da Universidade de São Paulo</a></dd>
+</dl>
+</div>
+<form class="formulario" id="formContato">
+<h2>Formulário visual</h2>
+<p>Este formulário ainda não envia dados para servidor. Ele serve como modelo de interface para futura integração com Google Forms, Formspree ou backend próprio.</p>
+<label for="nome">Nome</label>
+<input id="nome" name="nome" placeholder="Seu nome" required="" type="text"/>
+<label for="email">E-mail</label>
+<input id="email" name="email" placeholder="seu.email@exemplo.com" required="" type="email"/>
+<label for="mensagem">Mensagem</label>
+<textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required="" rows="6"></textarea>
+<button class="botao botao-formulario" type="submit">Simular envio</button>
+<p aria-live="polite" class="retorno-formulario" id="retornoFormulario"></p>
+</form>
+</section>
+</main>
+<footer class="rodape">
+<div class="container rodape-conteudo">
+<div class="rodape-marca">
+<img alt="Logotipo da SAdEM" class="logo-rodape" src="img/logo-sadem.png"/>
+<div>
+<strong>Secretaria Acadêmica da Engenharia Mecatrônica</strong>
+<p>Entidade estudantil vinculada à comunidade da Engenharia Mecatrônica da EESC-USP.</p>
+</div>
+</div>
+<div class="rodape-contatos">
+<p><a href="mailto:sadem@eesc.usp.br">sadem@eesc.usp.br</a></p>
+<p><a href="https://www.instagram.com/patosadem/" rel="noopener" target="_blank">@patosadem</a></p>
+<p><a href="https://eesc.usp.br/" rel="noopener" target="_blank">EESC-USP</a></p>
+</div>
+</div>
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -36,3 +36,14 @@ As imagens das extracurriculares da aba USP foram substituídas por arquivos loc
 Gestores dos núcleos atualizados na página `nucleos.html`: Quack, Educk, MKultural, Eventos, Social, Esportes, MKting e MKado.
 
 Atualização: a seção de conteúdo sugerido da página `alumni.html` foi removida e o favicon foi adicionado usando o logotipo da SAdEM.
+
+## Revisão técnica aplicada
+
+- Corrigido o link `nucleos.html#eventos`, com rolagem automática para a seção de eventos.
+- Ajustado o CTA principal da página inicial.
+- Corrigida a hierarquia de títulos em Rede Alumni, Iniciações Científicas e Núcleos.
+- Complementada a estrutura ARIA das subabas da página Núcleos.
+- Atualizado o botão do menu mobile para alternar entre “Menu” e “Fechar”.
+- Consolidado o CSS das extracurriculares e removidos trechos órfãos das versões anteriores.
+- Otimizadas as imagens das extracurriculares para WebP local.
+- Adicionados campos obrigatórios no formulário visual de contato.
